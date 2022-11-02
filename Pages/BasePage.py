@@ -32,3 +32,4 @@ class BasePage:
     def get_url(self, url):
         WebDriverWait(self.driver, 10).until(EC.url_contains(url))
         return
+
