@@ -18,9 +18,6 @@ class LoginPage(BasePage):
     def get_login_page_title(self, title):
         return self.get_title(title)
 
-    #def is_signup_link_exist(self):
-       #return self.is_visible(self,)
-
     def do_login(self, username, password):
         self.do_send_keys(self.Username,username)
         self.do_send_keys(self.Password, password)
