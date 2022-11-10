@@ -17,6 +17,6 @@ from Config.config import TestData
 
 @pytest.fixture()
 def driver():
-    driver = webdriver.Chrome(executable_path=TestData.CHROME_EXECUTABLE_PATH)
+    driver = webdriver.Chrome(executable_path=TestData.chrome_executable_path)
     yield driver
     driver.quit()
