@@ -1,9 +1,19 @@
+import random
+import string
+
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 """ This class is the parent of all pages"""
 """it contains all the generic methods and utilities for all the pages"""
+
+
+def get_random_string():
+    # With combination of lower and upper case
+    result_str = ''.join(random.choice(string.ascii_letters) for i in range(8))
+    # print random string
+    return result_str
 
 
 class BasePage:

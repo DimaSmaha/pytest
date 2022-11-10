@@ -15,8 +15,11 @@ from Config.config import TestData
 #     yield
 #     web_driver.close()
 
+# this file is a config for tests and its generates driver
+# in other case u should put driver to BasePage
 @pytest.fixture()
 def driver():
     driver = webdriver.Chrome(executable_path=TestData.chrome_executable_path)
+    driver.maximize_window()
     yield driver
     driver.quit()
