@@ -1,4 +1,4 @@
-from Pages.BasePage import BasePage
+from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from Config.config import TestData
 

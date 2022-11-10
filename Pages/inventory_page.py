@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
 
-from Pages.BasePage import BasePage
+from Pages.base_page import BasePage
 
 
-class inventoryPage(BasePage):
+class InventoryPage(BasePage):
 
     addToCartBtn = (By.ID, "add-to-cart-sauce-labs-backpack")
     removeBtn = (By.ID, "remove-sauce-labs-backpack")

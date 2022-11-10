@@ -29,7 +29,7 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.title_is(title))
         return self.driver.title
 
-    def get_url(self, url):
+    def check_url_contains(self, url):
         WebDriverWait(self.driver, 10).until(EC.url_contains(url))
         return
 
